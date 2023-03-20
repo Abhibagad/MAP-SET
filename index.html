@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP&SET</title>
+</head>
+<body>
+    <h1>MAP&SET</h1>
+    <h3>Q1</h3>
+    <pre>let str ="abcadeecfb"
+        const s = new Set();
+        for(let i=0;i< str.length;i++){
+            s.add(str[i]);
+        }
+        console.log(...s)</pre>
+    <br>
+    <hr>
+    <h3>Q2</h3>
+    <pre>let word ="abcadeecfb";
+        let count = new Map();
+        for(let i=0; i< word.length;i++)
+        {
+            if(count.has(word[i])){
+                count.set(word[i],Number(count.get(word[i]))+1);
+            }
+            else{
+                count.set(word[i],1);
+            }
+        }
+        count.forEach((value,key)=>
+        {
+            console.log(key + " = " + value);
+        });</pre>
+    <script src="./index.js"></script>
+</body>
+</html>
